@@ -70,7 +70,7 @@ console.log(datesSet)
 
 let datesMap = new Map<String, IDates[]>()
 
-var iterator = datesSet.values();
+let iterator = datesSet.values();
 for (let i = 0; i < datesSet.size; i++) {
 	let currIter = iterator.next().value;
 	datesMap.set(currIter, arrayOfDates.filter(item => item["dt"] == currIter))
