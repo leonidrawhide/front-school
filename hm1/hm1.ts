@@ -2,12 +2,12 @@ interface IDates {
 	dt: string;
 	quantity: number;
 	age: number | null;
-
+  
 	temp: {
-		temperature: string;
-		city: string;
-		optional?: boolean;
-	}
+    temperature: string;
+    city: string;
+    optional?: boolean;
+  }
 }
 
 let arrayOfDates: IDates[] = [
@@ -72,7 +72,7 @@ let datesMap = new Map<String, IDates[]>()
 
 let iterator = datesSet.values();
 for (let i = 0; i < datesSet.size; i++) {
-	let currIter = iterator.next().value;
+  let currIter = iterator.next().value;
 	datesMap.set(currIter, arrayOfDates.filter(item => item["dt"] == currIter))
 }
 
