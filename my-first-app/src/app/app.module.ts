@@ -34,6 +34,7 @@ import {MatInputModule} from '@angular/material/input';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     MatCheckboxModule,
     MatButtonModule,
